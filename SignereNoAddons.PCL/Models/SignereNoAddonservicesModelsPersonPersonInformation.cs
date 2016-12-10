@@ -1,0 +1,294 @@
+/*
+ * SignereNoAddons.PCL
+ *
+ * This file was automatically generated for Signere.no by APIMATIC v2.0 ( https://apimatic.io ) on 12/10/2016
+ */
+using System;
+using System.IO;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using Newtonsoft.Json;
+using Newtonsoft.Json.Converters;
+using Signere.no;
+using Signere.no.Utilities;
+
+namespace Signere.no.Models
+{
+    public class SignereNoAddonservicesModelsPersonPersonInformation : INotifyPropertyChanged 
+    {
+        // These fields hold the values for the public properties.
+        private string firstname;
+        private string middlename;
+        private string lastname;
+        private string dateOfBirth;
+        private string address;
+        private string zipCode;
+        private string city;
+        private string mobile;
+        private string phone;
+        private string gender;
+        private string rawJson;
+        private string requestId;
+        private DateTime? dead;
+        private string source;
+
+        /// <summary>
+        /// TODO: Write general description for this method
+        /// </summary>
+        [JsonProperty("Firstname")]
+        public string Firstname 
+        { 
+            get 
+            {
+                return this.firstname; 
+            } 
+            set 
+            {
+                this.firstname = value;
+                onPropertyChanged("Firstname");
+            }
+        }
+
+        /// <summary>
+        /// TODO: Write general description for this method
+        /// </summary>
+        [JsonProperty("Middlename")]
+        public string Middlename 
+        { 
+            get 
+            {
+                return this.middlename; 
+            } 
+            set 
+            {
+                this.middlename = value;
+                onPropertyChanged("Middlename");
+            }
+        }
+
+        /// <summary>
+        /// TODO: Write general description for this method
+        /// </summary>
+        [JsonProperty("Lastname")]
+        public string Lastname 
+        { 
+            get 
+            {
+                return this.lastname; 
+            } 
+            set 
+            {
+                this.lastname = value;
+                onPropertyChanged("Lastname");
+            }
+        }
+
+        /// <summary>
+        /// TODO: Write general description for this method
+        /// </summary>
+        [JsonProperty("DateOfBirth")]
+        public string DateOfBirth 
+        { 
+            get 
+            {
+                return this.dateOfBirth; 
+            } 
+            set 
+            {
+                this.dateOfBirth = value;
+                onPropertyChanged("DateOfBirth");
+            }
+        }
+
+        /// <summary>
+        /// TODO: Write general description for this method
+        /// </summary>
+        [JsonProperty("Address")]
+        public string Address 
+        { 
+            get 
+            {
+                return this.address; 
+            } 
+            set 
+            {
+                this.address = value;
+                onPropertyChanged("Address");
+            }
+        }
+
+        /// <summary>
+        /// TODO: Write general description for this method
+        /// </summary>
+        [JsonProperty("ZipCode")]
+        public string ZipCode 
+        { 
+            get 
+            {
+                return this.zipCode; 
+            } 
+            set 
+            {
+                this.zipCode = value;
+                onPropertyChanged("ZipCode");
+            }
+        }
+
+        /// <summary>
+        /// TODO: Write general description for this method
+        /// </summary>
+        [JsonProperty("City")]
+        public string City 
+        { 
+            get 
+            {
+                return this.city; 
+            } 
+            set 
+            {
+                this.city = value;
+                onPropertyChanged("City");
+            }
+        }
+
+        /// <summary>
+        /// TODO: Write general description for this method
+        /// </summary>
+        [JsonProperty("Mobile")]
+        public string Mobile 
+        { 
+            get 
+            {
+                return this.mobile; 
+            } 
+            set 
+            {
+                this.mobile = value;
+                onPropertyChanged("Mobile");
+            }
+        }
+
+        /// <summary>
+        /// TODO: Write general description for this method
+        /// </summary>
+        [JsonProperty("Phone")]
+        public string Phone 
+        { 
+            get 
+            {
+                return this.phone; 
+            } 
+            set 
+            {
+                this.phone = value;
+                onPropertyChanged("Phone");
+            }
+        }
+
+        /// <summary>
+        /// TODO: Write general description for this method
+        /// </summary>
+        [JsonProperty("Gender")]
+        public string Gender 
+        { 
+            get 
+            {
+                return this.gender; 
+            } 
+            set 
+            {
+                this.gender = value;
+                onPropertyChanged("Gender");
+            }
+        }
+
+        /// <summary>
+        /// TODO: Write general description for this method
+        /// </summary>
+        [JsonProperty("RawJson")]
+        public string RawJson 
+        { 
+            get 
+            {
+                return this.rawJson; 
+            } 
+            set 
+            {
+                this.rawJson = value;
+                onPropertyChanged("RawJson");
+            }
+        }
+
+        /// <summary>
+        /// TODO: Write general description for this method
+        /// </summary>
+        [JsonProperty("RequestId")]
+        public string RequestId 
+        { 
+            get 
+            {
+                return this.requestId; 
+            } 
+            set 
+            {
+                this.requestId = value;
+                onPropertyChanged("RequestId");
+            }
+        }
+
+        /// <summary>
+        /// TODO: Write general description for this method
+        /// </summary>
+        [JsonConverter(typeof(IsoDateTimeConverter))]
+        [JsonProperty("Dead")]
+        public DateTime? Dead 
+        { 
+            get 
+            {
+                return this.dead; 
+            } 
+            set 
+            {
+                this.dead = value;
+                onPropertyChanged("Dead");
+            }
+        }
+
+        /// <summary>
+        /// TODO: Write general description for this method
+        /// </summary>
+        [JsonProperty("Source")]
+        public string Source 
+        { 
+            get 
+            {
+                return this.source; 
+            } 
+            set 
+            {
+                this.source = value;
+                onPropertyChanged("Source");
+            }
+        }
+
+        /// <summary>
+        /// Property changed event for observer pattern
+        /// </summary>
+        public event PropertyChangedEventHandler PropertyChanged;
+
+        /// <summary>
+        /// Raises event when a property is changed
+        /// </summary>
+        /// <param name="propertyName">Name of the changed property</param>
+        protected void onPropertyChanged(String propertyName)
+        {
+            if (PropertyChanged != null)
+            {
+                PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+} 

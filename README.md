@@ -8,50 +8,50 @@ added as in the packages.config file. If the automatic NuGet package restore
 is enabled, these dependencies will be installed automatically. Therefore,
 you will need internet access for build.
 
-1. Open the solution (SignerenoAddonServices.sln) file.
+1. Open the solution (SignereNoAddons.sln) file.
 2. Invoke the build process using `Ctrl+Shift+B` shortcut key or using the `Build` menu as shown below.
 
-![Building SDK using Visual Studio](http://apidocs.io/illustration/cs?step=buildSDK&workspaceFolder=Signereno.AddonServices-CSharp&workspaceName=SignerenoAddonServices&projectName=SignerenoAddonServices.PCL)
+![Building SDK using Visual Studio](http://apidocs.io/illustration/cs?step=buildSDK&workspaceFolder=SignereNoAddons-CSharp&workspaceName=SignereNoAddons&projectName=SignereNoAddons.PCL)
 
 ## How to Use
 
 The build process generates a portable class library, which can be used like a normal class library. The generated library is compatible with Windows Forms, Windows RT, Windows Phone 8,
 Silverlight 5, Xamarin iOS, Xamarin Android and Mono. More information on how to use can be found at the [MSDN Portable Class Libraries documentation](http://msdn.microsoft.com/en-us/library/vstudio/gg597391%28v=vs.100%29.aspx).
 
-The following section explains how to use the SignerenoAddonServices library in a new console project.
+The following section explains how to use the SignereNoAddons library in a new console project.
 
 ### 1. Starting a new project
 
 For starting a new project, right click on the current solution from the *solution explorer* and choose  ``` Add -> New Project ```.
 
-![Add a new project in the existing solution using Visual Studio](http://apidocs.io/illustration/cs?step=addProject&workspaceFolder=Signereno.AddonServices-CSharp&workspaceName=SignerenoAddonServices&projectName=SignerenoAddonServices.PCL)
+![Add a new project in the existing solution using Visual Studio](http://apidocs.io/illustration/cs?step=addProject&workspaceFolder=SignereNoAddons-CSharp&workspaceName=SignereNoAddons&projectName=SignereNoAddons.PCL)
 
 Next, choose "Console Application", provide a ``` TestConsoleProject ``` as the project name and click ``` OK ```.
 
-![Create a new console project using Visual Studio](http://apidocs.io/illustration/cs?step=createProject&workspaceFolder=Signereno.AddonServices-CSharp&workspaceName=SignerenoAddonServices&projectName=SignerenoAddonServices.PCL)
+![Create a new console project using Visual Studio](http://apidocs.io/illustration/cs?step=createProject&workspaceFolder=SignereNoAddons-CSharp&workspaceName=SignereNoAddons&projectName=SignereNoAddons.PCL)
 
 ### 2. Set as startup project
 
 The new console project is the entry point for the eventual execution. This requires us to set the ``` TestConsoleProject ``` as the start-up project. To do this, right-click on the  ``` TestConsoleProject ``` and choose  ``` Set as StartUp Project ``` form the context menu.
 
-![Set the new cosole project as the start up project](http://apidocs.io/illustration/cs?step=setStartup&workspaceFolder=Signereno.AddonServices-CSharp&workspaceName=SignerenoAddonServices&projectName=SignerenoAddonServices.PCL)
+![Set the new cosole project as the start up project](http://apidocs.io/illustration/cs?step=setStartup&workspaceFolder=SignereNoAddons-CSharp&workspaceName=SignereNoAddons&projectName=SignereNoAddons.PCL)
 
 ### 3. Add reference of the library project
 
-In order to use the SignerenoAddonServices library in the new project, first we must add a projet reference to the ``` TestConsoleProject ```. First, right click on the ``` References ``` node in the *solution explorer* and click ``` Add Reference... ```.
+In order to use the SignereNoAddons library in the new project, first we must add a projet reference to the ``` TestConsoleProject ```. First, right click on the ``` References ``` node in the *solution explorer* and click ``` Add Reference... ```.
 
-![Open references of the TestConsoleProject](http://apidocs.io/illustration/cs?step=addReference&workspaceFolder=Signereno.AddonServices-CSharp&workspaceName=SignerenoAddonServices&projectName=SignerenoAddonServices.PCL)
+![Open references of the TestConsoleProject](http://apidocs.io/illustration/cs?step=addReference&workspaceFolder=SignereNoAddons-CSharp&workspaceName=SignereNoAddons&projectName=SignereNoAddons.PCL)
 
-Next, a window will be displayed where we must set the ``` checkbox ``` on ``` SignerenoAddonServices.PCL ``` and click ``` OK ```. By doing this, we have added a reference of the ```SignerenoAddonServices.PCL``` project into the new ``` TestConsoleProject ```.
+Next, a window will be displayed where we must set the ``` checkbox ``` on ``` SignereNoAddons.PCL ``` and click ``` OK ```. By doing this, we have added a reference of the ```SignereNoAddons.PCL``` project into the new ``` TestConsoleProject ```.
 
-![Add a reference to the TestConsoleProject](http://apidocs.io/illustration/cs?step=createReference&workspaceFolder=Signereno.AddonServices-CSharp&workspaceName=SignerenoAddonServices&projectName=SignerenoAddonServices.PCL)
+![Add a reference to the TestConsoleProject](http://apidocs.io/illustration/cs?step=createReference&workspaceFolder=SignereNoAddons-CSharp&workspaceName=SignereNoAddons&projectName=SignereNoAddons.PCL)
 
 ### 4. Write sample code
 
 Once the ``` TestConsoleProject ``` is created, a file named ``` Program.cs ``` will be visible in the *solution explorer* with an empty ``` Main ``` method. This is the entry point for the execution of the entire solution.
 Here, you can add code to initialize the client library and acquire the instance of a *Controller* class. Sample code to initialize the client library and using controller methods is given in the subsequent sections.
 
-![Add a reference to the TestConsoleProject](http://apidocs.io/illustration/cs?step=addCode&workspaceFolder=Signereno.AddonServices-CSharp&workspaceName=SignerenoAddonServices&projectName=SignerenoAddonServices.PCL)
+![Add a reference to the TestConsoleProject](http://apidocs.io/illustration/cs?step=addCode&workspaceFolder=SignereNoAddons-CSharp&workspaceName=SignereNoAddons&projectName=SignereNoAddons.PCL)
 
 ## How to Test
 
@@ -77,30 +77,30 @@ API client can be initialized as following.
 // Configuration parameters and credentials
 string oAuthAccessToken = "oAuthAccessToken"; // The OAuth 2.0 access token to be set before API calls
 
-SignerenoAddonServicesClient client = new SignerenoAddonServicesClient(oAuthAccessToken);
+SignereNoAddonsClient client = new SignereNoAddonsClient(oAuthAccessToken);
 ```
 
 ## Class Reference
 
 ### <a name="list_of_controllers"></a>List of Controllers
 
-* [SignatureRolesCheckController](#signature_roles_check_controller)
-* [OfficialPersonRegistryController](#official_person_registry_controller)
-* [PersonalInfoController](#personal_info_controller)
-* [CompanyInfoController](#company_info_controller)
-* [CreditCheckController](#credit_check_controller)
+* [SignatureRolesCheck](#signature_roles_check)
+* [OfficialPersonRegistry](#official_person_registry)
+* [PersonalInfo](#personal_info)
+* [CompanyInfo](#company_info)
+* [CreditCheck](#credit_check)
 
-### <a name="signature_roles_check_controller"></a>![Class: ](http://apidocs.io/img/class.png "SignerenoAddonServices.PCL.Controllers.SignatureRolesCheckController") SignatureRolesCheckController
+### <a name="signature_roles_check"></a>![Class: ](http://apidocs.io/img/class.png "Signere.no.Controllers.SignatureRolesCheck") SignatureRolesCheck
 
 #### Get singleton instance
 
-The singleton instance of the ``` SignatureRolesCheckController ``` class can be accessed from the API Client.
+The singleton instance of the ``` SignatureRolesCheck ``` class can be accessed from the API Client.
 
 ```csharp
-SignatureRolesCheckController signatureRolesCheck = client.SignatureRolesCheck;
+SignatureRolesCheck signatureRolesCheck = client.SignatureRolesCheck;
 ```
 
-#### <a name="create_signature_roles_check_check_signatures"></a>![Method: ](http://apidocs.io/img/method.png "SignerenoAddonServices.PCL.Controllers.SignatureRolesCheckController.CreateSignatureRolesCheckCheckSignatures") CreateSignatureRolesCheckCheckSignatures
+#### <a name="create_signature_roles_check_check_signatures"></a>![Method: ](http://apidocs.io/img/method.png "Signere.no.Controllers.SignatureRolesCheck.CreateSignatureRolesCheckCheckSignatures") CreateSignatureRolesCheckCheckSignatures
 
 > Check signatures / prokura
 
@@ -130,8 +130,8 @@ Task<SignereNoAddonservicesModelsSignatureCheckSignatureStatusResponse> CreateSi
 ```csharp
 Guid accountId = Guid.NewGuid();
 var data = new SignereNoAddonservicesModelsSignatureCheckSignatureCheckRequest();
-bool? isprod = false;
-bool? includereport = false;
+bool? isprod = true;
+bool? includereport = true;
 string countrycode = "countrycode";
 
 SignereNoAddonservicesModelsSignatureCheckSignatureStatusResponse result = await signatureRolesCheck.CreateSignatureRolesCheckCheckSignatures(accountId, data, isprod, includereport, countrycode);
@@ -148,7 +148,7 @@ SignereNoAddonservicesModelsSignatureCheckSignatureStatusResponse result = await
 | 404 | Organization data not found |
 
 
-#### <a name="get_signature_roles_check_get_rights"></a>![Method: ](http://apidocs.io/img/method.png "SignerenoAddonServices.PCL.Controllers.SignatureRolesCheckController.GetSignatureRolesCheckGetRights") GetSignatureRolesCheckGetRights
+#### <a name="get_signature_roles_check_get_rights"></a>![Method: ](http://apidocs.io/img/method.png "Signere.no.Controllers.SignatureRolesCheck.GetSignatureRolesCheckGetRights") GetSignatureRolesCheckGetRights
 
 > Get rights
 
@@ -195,17 +195,17 @@ SignereNoAddonservicesModelsSignatureCheckSignatureRights result = await signatu
 
 [Back to List of Controllers](#list_of_controllers)
 
-### <a name="official_person_registry_controller"></a>![Class: ](http://apidocs.io/img/class.png "SignerenoAddonServices.PCL.Controllers.OfficialPersonRegistryController") OfficialPersonRegistryController
+### <a name="official_person_registry"></a>![Class: ](http://apidocs.io/img/class.png "Signere.no.Controllers.OfficialPersonRegistry") OfficialPersonRegistry
 
 #### Get singleton instance
 
-The singleton instance of the ``` OfficialPersonRegistryController ``` class can be accessed from the API Client.
+The singleton instance of the ``` OfficialPersonRegistry ``` class can be accessed from the API Client.
 
 ```csharp
-OfficialPersonRegistryController officialPersonRegistry = client.OfficialPersonRegistry;
+OfficialPersonRegistry officialPersonRegistry = client.OfficialPersonRegistry;
 ```
 
-#### <a name="get_official_person_registry_get_by_address"></a>![Method: ](http://apidocs.io/img/method.png "SignerenoAddonServices.PCL.Controllers.OfficialPersonRegistryController.GetOfficialPersonRegistryGetByAddress") GetOfficialPersonRegistryGetByAddress
+#### <a name="get_official_person_registry_get_by_address"></a>![Method: ](http://apidocs.io/img/method.png "Signere.no.Controllers.OfficialPersonRegistry.GetOfficialPersonRegistryGetByAddress") GetOfficialPersonRegistryGetByAddress
 
 > Name and full address
 
@@ -267,7 +267,7 @@ InfotorgInfotorgetResponse result = await officialPersonRegistry.GetOfficialPers
 | 500 | Internal server error (Miscellaneous) |
 
 
-#### <a name="get_official_person_registry_get_by_dateof_birth_and_name"></a>![Method: ](http://apidocs.io/img/method.png "SignerenoAddonServices.PCL.Controllers.OfficialPersonRegistryController.GetOfficialPersonRegistryGetByDateofBirthAndName") GetOfficialPersonRegistryGetByDateofBirthAndName
+#### <a name="get_official_person_registry_get_by_dateof_birth_and_name"></a>![Method: ](http://apidocs.io/img/method.png "Signere.no.Controllers.OfficialPersonRegistry.GetOfficialPersonRegistryGetByDateofBirthAndName") GetOfficialPersonRegistryGetByDateofBirthAndName
 
 > Date of birth and name
 
@@ -306,7 +306,7 @@ Task<SignereNoAddonservicesModelsPersonOfficialPersonRegistryResponse> GetOffici
 Guid accountId = Guid.NewGuid();
 string username = "username";
 string password = "password";
-int dateofbirth = 238;
+int dateofbirth = 245;
 string firstname = "firstname";
 string lastname = "lastname";
 string reason = "reason";
@@ -326,7 +326,7 @@ SignereNoAddonservicesModelsPersonOfficialPersonRegistryResponse result = await 
 | 500 | Internal server error (Miscellaneous) |
 
 
-#### <a name="get_official_person_registry_get_by_name_and_social_sec"></a>![Method: ](http://apidocs.io/img/method.png "SignerenoAddonServices.PCL.Controllers.OfficialPersonRegistryController.GetOfficialPersonRegistryGetByNameAndSocialSec") GetOfficialPersonRegistryGetByNameAndSocialSec
+#### <a name="get_official_person_registry_get_by_name_and_social_sec"></a>![Method: ](http://apidocs.io/img/method.png "Signere.no.Controllers.OfficialPersonRegistry.GetOfficialPersonRegistryGetByNameAndSocialSec") GetOfficialPersonRegistryGetByNameAndSocialSec
 
 > Social security and name
 
@@ -385,7 +385,7 @@ InfotorgInfotorgetResponse result = await officialPersonRegistry.GetOfficialPers
 | 500 | Internal server error (Miscellaneous) |
 
 
-#### <a name="get_official_person_registry_get_by_social_sec"></a>![Method: ](http://apidocs.io/img/method.png "SignerenoAddonServices.PCL.Controllers.OfficialPersonRegistryController.GetOfficialPersonRegistryGetBySocialSec") GetOfficialPersonRegistryGetBySocialSec
+#### <a name="get_official_person_registry_get_by_social_sec"></a>![Method: ](http://apidocs.io/img/method.png "Signere.no.Controllers.OfficialPersonRegistry.GetOfficialPersonRegistryGetBySocialSec") GetOfficialPersonRegistryGetBySocialSec
 
 > Social Security number
 
@@ -440,17 +440,17 @@ InfotorgInfotorgetResponse result = await officialPersonRegistry.GetOfficialPers
 
 [Back to List of Controllers](#list_of_controllers)
 
-### <a name="personal_info_controller"></a>![Class: ](http://apidocs.io/img/class.png "SignerenoAddonServices.PCL.Controllers.PersonalInfoController") PersonalInfoController
+### <a name="personal_info"></a>![Class: ](http://apidocs.io/img/class.png "Signere.no.Controllers.PersonalInfo") PersonalInfo
 
 #### Get singleton instance
 
-The singleton instance of the ``` PersonalInfoController ``` class can be accessed from the API Client.
+The singleton instance of the ``` PersonalInfo ``` class can be accessed from the API Client.
 
 ```csharp
-PersonalInfoController personalInfo = client.PersonalInfo;
+PersonalInfo personalInfo = client.PersonalInfo;
 ```
 
-#### <a name="get_personal_info_person_info_phone_number"></a>![Method: ](http://apidocs.io/img/method.png "SignerenoAddonServices.PCL.Controllers.PersonalInfoController.GetPersonalInfoPersonInfoPhoneNumber") GetPersonalInfoPersonInfoPhoneNumber
+#### <a name="get_personal_info_person_info_phone_number"></a>![Method: ](http://apidocs.io/img/method.png "Signere.no.Controllers.PersonalInfo.GetPersonalInfoPersonInfoPhoneNumber") GetPersonalInfoPersonInfoPhoneNumber
 
 > Phonenumber
 
@@ -486,7 +486,7 @@ SignereNoAddonservicesModelsPersonPersonInformation result = await personalInfo.
 | 500 | Internal server error (Miscellaneous) |
 
 
-#### <a name="get_personal_info_person_info_social_sec"></a>![Method: ](http://apidocs.io/img/method.png "SignerenoAddonServices.PCL.Controllers.PersonalInfoController.GetPersonalInfoPersonInfoSocialSec") GetPersonalInfoPersonInfoSocialSec
+#### <a name="get_personal_info_person_info_social_sec"></a>![Method: ](http://apidocs.io/img/method.png "Signere.no.Controllers.PersonalInfo.GetPersonalInfoPersonInfoSocialSec") GetPersonalInfoPersonInfoSocialSec
 
 > Name and social security number
 
@@ -524,7 +524,7 @@ SignereNoAddonservicesModelsPersonPersonInformation result = await personalInfo.
 | 500 | Internal server error (Miscellaneous) |
 
 
-#### <a name="get_personal_info_person_info_date_of_birth"></a>![Method: ](http://apidocs.io/img/method.png "SignerenoAddonServices.PCL.Controllers.PersonalInfoController.GetPersonalInfoPersonInfoDateOfBirth") GetPersonalInfoPersonInfoDateOfBirth
+#### <a name="get_personal_info_person_info_date_of_birth"></a>![Method: ](http://apidocs.io/img/method.png "Signere.no.Controllers.PersonalInfo.GetPersonalInfoPersonInfoDateOfBirth") GetPersonalInfoPersonInfoDateOfBirth
 
 > Date of birth and name
 
@@ -564,17 +564,17 @@ SignereNoAddonservicesModelsPersonPersonInformation result = await personalInfo.
 
 [Back to List of Controllers](#list_of_controllers)
 
-### <a name="company_info_controller"></a>![Class: ](http://apidocs.io/img/class.png "SignerenoAddonServices.PCL.Controllers.CompanyInfoController") CompanyInfoController
+### <a name="company_info"></a>![Class: ](http://apidocs.io/img/class.png "Signere.no.Controllers.CompanyInfo") CompanyInfo
 
 #### Get singleton instance
 
-The singleton instance of the ``` CompanyInfoController ``` class can be accessed from the API Client.
+The singleton instance of the ``` CompanyInfo ``` class can be accessed from the API Client.
 
 ```csharp
-CompanyInfoController companyInfo = client.CompanyInfo;
+CompanyInfo companyInfo = client.CompanyInfo;
 ```
 
-#### <a name="get_company_info_get_org_info_bisnode"></a>![Method: ](http://apidocs.io/img/method.png "SignerenoAddonServices.PCL.Controllers.CompanyInfoController.GetCompanyInfoGetOrgInfoBisnode") GetCompanyInfoGetOrgInfoBisnode
+#### <a name="get_company_info_get_org_info_bisnode"></a>![Method: ](http://apidocs.io/img/method.png "Signere.no.Controllers.CompanyInfo.GetCompanyInfoGetOrgInfoBisnode") GetCompanyInfoGetOrgInfoBisnode
 
 > Matchit
 
@@ -613,7 +613,7 @@ SignereNoAddonservicesModelsCompanyCompanyInformationResponse result = await com
 | 500 | Internal Server Error (Miscellaneous) |
 
 
-#### <a name="get_company_info_get_org_info_difi"></a>![Method: ](http://apidocs.io/img/method.png "SignerenoAddonServices.PCL.Controllers.CompanyInfoController.GetCompanyInfoGetOrgInfoDifi") GetCompanyInfoGetOrgInfoDifi
+#### <a name="get_company_info_get_org_info_difi"></a>![Method: ](http://apidocs.io/img/method.png "Signere.no.Controllers.CompanyInfo.GetCompanyInfoGetOrgInfoDifi") GetCompanyInfoGetOrgInfoDifi
 
 > Difi
 
@@ -651,17 +651,17 @@ SignereNoAddonservicesModelsCompanyDifiResponse result = await companyInfo.GetCo
 
 [Back to List of Controllers](#list_of_controllers)
 
-### <a name="credit_check_controller"></a>![Class: ](http://apidocs.io/img/class.png "SignerenoAddonServices.PCL.Controllers.CreditCheckController") CreditCheckController
+### <a name="credit_check"></a>![Class: ](http://apidocs.io/img/class.png "Signere.no.Controllers.CreditCheck") CreditCheck
 
 #### Get singleton instance
 
-The singleton instance of the ``` CreditCheckController ``` class can be accessed from the API Client.
+The singleton instance of the ``` CreditCheck ``` class can be accessed from the API Client.
 
 ```csharp
-CreditCheckController creditCheck = client.CreditCheck;
+CreditCheck creditCheck = client.CreditCheck;
 ```
 
-#### <a name="get_credit_check_business_credit_check"></a>![Method: ](http://apidocs.io/img/method.png "SignerenoAddonServices.PCL.Controllers.CreditCheckController.GetCreditCheckBusinessCreditCheck") GetCreditCheckBusinessCreditCheck
+#### <a name="get_credit_check_business_credit_check"></a>![Method: ](http://apidocs.io/img/method.png "Signere.no.Controllers.CreditCheck.GetCreditCheckBusinessCreditCheck") GetCreditCheckBusinessCreditCheck
 
 > Business credit check
 
@@ -692,7 +692,7 @@ Task<SignereNoAddonservicesModelsCompanyCreditCheckCompanyResponse> GetCreditChe
 
 ```csharp
 Guid accountId = Guid.NewGuid();
-int orgnumber = 238;
+int orgnumber = 245;
 bool? isprod = true;
 string userId = "userId";
 string password = "password";
@@ -711,7 +711,7 @@ SignereNoAddonservicesModelsCompanyCreditCheckCompanyResponse result = await cre
 | 500 | Internal server error (Miscellaneous) |
 
 
-#### <a name="get_credit_check_private_credit_check"></a>![Method: ](http://apidocs.io/img/method.png "SignerenoAddonServices.PCL.Controllers.CreditCheckController.GetCreditCheckPrivateCreditCheck") GetCreditCheckPrivateCreditCheck
+#### <a name="get_credit_check_private_credit_check"></a>![Method: ](http://apidocs.io/img/method.png "Signere.no.Controllers.CreditCheck.GetCreditCheckPrivateCreditCheck") GetCreditCheckPrivateCreditCheck
 
 > Private credit check
 
@@ -744,11 +744,11 @@ Task<SignereNoAddonservicesModelsPersonCreditCheckPersonResponse> GetCreditCheck
 
 ```csharp
 Guid accountId = Guid.NewGuid();
-long socialSecurityNumber = 238;
-bool? isprod = true;
+long socialSecurityNumber = 245;
+bool? isprod = false;
 string userId = "userId";
 string password = "password";
-int? phonenumber = 74;
+int? phonenumber = 82;
 string email = "email";
 
 SignereNoAddonservicesModelsPersonCreditCheckPersonResponse result = await creditCheck.GetCreditCheckPrivateCreditCheck(accountId, socialSecurityNumber, isprod, userId, password, phonenumber, email);

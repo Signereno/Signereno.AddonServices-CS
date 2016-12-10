@@ -1,0 +1,11 @@
+namespace Signere.no.Http.Request
+{
+    public enum HttpMethod
+    {
+        GET,
+        POST,
+        PUT,
+        PATCH,
+        DELETE
+    }
+}
