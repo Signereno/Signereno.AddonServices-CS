@@ -1,0 +1,239 @@
+/*
+ * SignereNoAccont.PCL
+ *
+ * This file was automatically generated for Signere.no by APIMATIC v2.0 ( https://apimatic.io ) on 12/25/2016
+ */
+using System;
+using System.IO;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using Newtonsoft.Json;
+using Newtonsoft.Json.Converters;
+using Signere.no;
+using Signere.no.Utilities;
+
+namespace Signere.no.Models
+{
+    public class OkonomiSammendragKonsern : INotifyPropertyChanged 
+    {
+        // These fields hold the values for the public properties.
+        private int? regnskapsAvArField;
+        private int? regnskapsAvMndField;
+        private long? totalinntektField;
+        private long? resultatForSkattField;
+        private long? arsResultatField;
+        private long? sumEiendelerField;
+        private double? overskuddsprosentField;
+        private double? totalrentabilitetField;
+        private double? egenkapitalandelField;
+        private double? likviditetsgrad1Field;
+        private double? likviditetsgrad2Field;
+
+        /// <summary>
+        /// TODO: Write general description for this method
+        /// </summary>
+        [JsonProperty("regnskapsAvArField")]
+        public int? RegnskapsAvArField 
+        { 
+            get 
+            {
+                return this.regnskapsAvArField; 
+            } 
+            set 
+            {
+                this.regnskapsAvArField = value;
+                onPropertyChanged("RegnskapsAvArField");
+            }
+        }
+
+        /// <summary>
+        /// TODO: Write general description for this method
+        /// </summary>
+        [JsonProperty("regnskapsAvMndField")]
+        public int? RegnskapsAvMndField 
+        { 
+            get 
+            {
+                return this.regnskapsAvMndField; 
+            } 
+            set 
+            {
+                this.regnskapsAvMndField = value;
+                onPropertyChanged("RegnskapsAvMndField");
+            }
+        }
+
+        /// <summary>
+        /// TODO: Write general description for this method
+        /// </summary>
+        [JsonProperty("totalinntektField")]
+        public long? TotalinntektField 
+        { 
+            get 
+            {
+                return this.totalinntektField; 
+            } 
+            set 
+            {
+                this.totalinntektField = value;
+                onPropertyChanged("TotalinntektField");
+            }
+        }
+
+        /// <summary>
+        /// TODO: Write general description for this method
+        /// </summary>
+        [JsonProperty("resultatForSkattField")]
+        public long? ResultatForSkattField 
+        { 
+            get 
+            {
+                return this.resultatForSkattField; 
+            } 
+            set 
+            {
+                this.resultatForSkattField = value;
+                onPropertyChanged("ResultatForSkattField");
+            }
+        }
+
+        /// <summary>
+        /// TODO: Write general description for this method
+        /// </summary>
+        [JsonProperty("arsResultatField")]
+        public long? ArsResultatField 
+        { 
+            get 
+            {
+                return this.arsResultatField; 
+            } 
+            set 
+            {
+                this.arsResultatField = value;
+                onPropertyChanged("ArsResultatField");
+            }
+        }
+
+        /// <summary>
+        /// TODO: Write general description for this method
+        /// </summary>
+        [JsonProperty("sumEiendelerField")]
+        public long? SumEiendelerField 
+        { 
+            get 
+            {
+                return this.sumEiendelerField; 
+            } 
+            set 
+            {
+                this.sumEiendelerField = value;
+                onPropertyChanged("SumEiendelerField");
+            }
+        }
+
+        /// <summary>
+        /// TODO: Write general description for this method
+        /// </summary>
+        [JsonProperty("overskuddsprosentField")]
+        public double? OverskuddsprosentField 
+        { 
+            get 
+            {
+                return this.overskuddsprosentField; 
+            } 
+            set 
+            {
+                this.overskuddsprosentField = value;
+                onPropertyChanged("OverskuddsprosentField");
+            }
+        }
+
+        /// <summary>
+        /// TODO: Write general description for this method
+        /// </summary>
+        [JsonProperty("totalrentabilitetField")]
+        public double? TotalrentabilitetField 
+        { 
+            get 
+            {
+                return this.totalrentabilitetField; 
+            } 
+            set 
+            {
+                this.totalrentabilitetField = value;
+                onPropertyChanged("TotalrentabilitetField");
+            }
+        }
+
+        /// <summary>
+        /// TODO: Write general description for this method
+        /// </summary>
+        [JsonProperty("egenkapitalandelField")]
+        public double? EgenkapitalandelField 
+        { 
+            get 
+            {
+                return this.egenkapitalandelField; 
+            } 
+            set 
+            {
+                this.egenkapitalandelField = value;
+                onPropertyChanged("EgenkapitalandelField");
+            }
+        }
+
+        /// <summary>
+        /// TODO: Write general description for this method
+        /// </summary>
+        [JsonProperty("likviditetsgrad1Field")]
+        public double? Likviditetsgrad1Field 
+        { 
+            get 
+            {
+                return this.likviditetsgrad1Field; 
+            } 
+            set 
+            {
+                this.likviditetsgrad1Field = value;
+                onPropertyChanged("Likviditetsgrad1Field");
+            }
+        }
+
+        /// <summary>
+        /// TODO: Write general description for this method
+        /// </summary>
+        [JsonProperty("likviditetsgrad2Field")]
+        public double? Likviditetsgrad2Field 
+        { 
+            get 
+            {
+                return this.likviditetsgrad2Field; 
+            } 
+            set 
+            {
+                this.likviditetsgrad2Field = value;
+                onPropertyChanged("Likviditetsgrad2Field");
+            }
+        }
+
+        /// <summary>
+        /// Property changed event for observer pattern
+        /// </summary>
+        public event PropertyChangedEventHandler PropertyChanged;
+
+        /// <summary>
+        /// Raises event when a property is changed
+        /// </summary>
+        /// <param name="propertyName">Name of the changed property</param>
+        protected void onPropertyChanged(String propertyName)
+        {
+            if (PropertyChanged != null)
+            {
+                PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+} 

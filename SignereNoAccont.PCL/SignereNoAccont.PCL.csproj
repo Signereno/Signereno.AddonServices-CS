@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+ - SignereNoAccont.PCL
+ -
+ - This file was automatically generated for Signere.no by APIMATIC v2.0 ( https://apimatic.io ) on 12/25/2016
+-->
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <RootNamespace>Signere.no</RootNamespace>
+    <AssemblyName>SignereNoAccont.PCL</AssemblyName>
+    <OutputType>Library</OutputType>
+    <OutputPath>bin/DEBUG/</OutputPath>
+    <ProjectGuid>{47871208-e856-478c-8f7a-23a165ca933f}</ProjectGuid>
+    <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>
+    <MinimumVisualStudioVersion>11.0</MinimumVisualStudioVersion>
+    <NuGetPackageImportStamp>ee2bb91c</NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ProjectTypeGuids>{786C830F-07A1-408B-BD7F-6EE04809D6DB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>  
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Profile328</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Threading.Tasks">
+      <HintPath>..\packages\Microsoft.Bcl.Async.1.0.168\lib\portable-net40+sl4+win8+wp71+wpa81\Microsoft.Threading.Tasks.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Threading.Tasks.Extensions">
+      <HintPath>..\packages\Microsoft.Bcl.Async.1.0.168\lib\portable-net40+sl4+win8+wp71+wpa81\Microsoft.Threading.Tasks.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.9.0.1\lib\portable-net40+sl5+wp80+win8+wpa81\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO">
+      <HintPath>..\packages\Microsoft.Bcl.1.1.10\lib\portable-net40+win8+wp8+wpa81\System.IO.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http">
+      <HintPath>..\packages\Microsoft.Net.Http.2.2.29\lib\portable-net40+sl4+win8+wp71+wpa81\System.Net.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.Extensions">
+      <HintPath>..\packages\Microsoft.Net.Http.2.2.29\lib\portable-net40+sl4+win8+wp71+wpa81\System.Net.Http.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.Primitives">
+      <HintPath>..\packages\Microsoft.Net.Http.2.2.29\lib\portable-net40+sl4+win8+wp71+wpa81\System.Net.Http.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime">
+      <HintPath>..\packages\Microsoft.Bcl.1.1.10\lib\portable-net40+win8+wp8+wpa81\System.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Tasks">
+      <HintPath>..\packages\Microsoft.Bcl.1.1.10\lib\portable-net40+win8+wp8+wpa81\System.Threading.Tasks.dll</HintPath>
+    </Reference>
+    <Reference Include="unirest-net">
+      <HintPath>..\packages\Unirest-APIMATIC.1.0.1.26\lib\portable-net40+sl5+wp80+win8+wpa81\unirest-net.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Models\PersonTidligereNavnAdresse.cs" />
+    <Compile Include="Models\EiendelerKonsern.cs" />
+    <Compile Include="Models\EiendelerForetak.cs" />
+    <Compile Include="Models\OkonomiDetaljerKonsern.cs" />
+    <Compile Include="Models\OkonomiDetaljerForetak.cs" />
+    <Compile Include="Models\OkonomiSammendragKonsern.cs" />
+    <Compile Include="Models\OkonomiSammendragForetak.cs" />
+    <Compile Include="Models\ArsaksData.cs" />
+    <Compile Include="Models\Scoring.cs" />
+    <Compile Include="Models\KonsernLink.cs" />
+    <Compile Include="Models\EiendomNorge.cs" />
+    <Compile Include="Models\Losore.cs" />
+    <Compile Include="Models\BetaDetaljer.cs" />
+    <Compile Include="Models\BetaSammendrag.cs" />
+    <Compile Include="Models\NokkeltallKonsern.cs" />
+    <Compile Include="Models\NokkeltallBransje.cs" />
+    <Compile Include="Models\GjeldEgenkapitalForetak.cs" />
+    <Compile Include="Models\NokkeltallForetak.cs" />
+    <Compile Include="Models\GjeldEgenkapitalKonsern.cs" />
+    <Compile Include="Models\Rettighetshavere.cs" />
+    <Compile Include="Models\CheckSignature.cs" />
+    <Compile Include="Models\OrganizationRequest.cs" />
+    <Compile Include="Models\SignatureCheckRequest.cs" />
+    <Compile Include="Models\OtherSignatures.cs" />
+    <Compile Include="Models\Signature.cs" />
+    <Compile Include="Models\RequiredSignatures.cs" />
+    <Compile Include="Models\SignatureObject.cs" />
+    <Compile Include="Models\SignatureRights.cs" />
+    <Compile Include="Models\PersonPersonInformation.cs" />
+    <Compile Include="Models\PersonOfficialPersonRegistryResponse.cs" />
+    <Compile Include="Models\Meldinger.cs" />
+    <Compile Include="Models\VervData.cs" />
+    <Compile Include="Models\FullmaktPerson.cs" />
+    <Compile Include="Models\FullmaktForetak.cs" />
+    <Compile Include="Models\EiendomNorgeListe.cs" />
+    <Compile Include="Models\AvdelingData.cs" />
+    <Compile Include="Models\OkonomiEnk.cs" />
+    <Compile Include="Models\Datterselskap.cs" />
+    <Compile Include="Models\Aksjonar.cs" />
+    <Compile Include="Models\PersonDisponibelInntekt.cs" />
+    <Compile Include="Models\PersonLigning.cs" />
+    <Compile Include="Models\PersonBetaDetaljer.cs" />
+    <Compile Include="Models\PersonBetaSammendrag.cs" />
+    <Compile Include="Models\PersonDelomrader.cs" />
+    <Compile Include="Models\PersonArsaksData.cs" />
+    <Compile Include="Models\PersonScoring.cs" />
+    <Compile Include="Models\PersonNavnAdresse.cs" />
+    <Compile Include="Models\PersonIdentifikasjon.cs" />
+    <Compile Include="Models\PersonHentPersonResponse.cs" />
+    <Compile Include="Models\PersonEconomy.cs" />
+    <Compile Include="Models\PersonCreditCheckPersonResponse.cs" />
+    <Compile Include="Models\CompanyInformationResponse.cs" />
+    <Compile Include="Models\CompanyInfoDifiResponse.cs" />
+    <Compile Include="Models\DifiResponse.cs" />
+    <Compile Include="Models\PersonNaringsInteresser.cs" />
+    <Compile Include="Models\PersonEiendomNorge.cs" />
+    <Compile Include="Models\PersonEiendomListe.cs" />
+    <Compile Include="Models\PersonLosore.cs" />
+    <Compile Include="Models\Verv.cs" />
+    <Compile Include="Models\Juridisk.cs" />
+    <Compile Include="Models\AnsatteData.cs" />
+    <Compile Include="Models\BransjeData.cs" />
+    <Compile Include="Models\Grunnfakta.cs" />
+    <Compile Include="Models\HistoriskRating.cs" />
+    <Compile Include="Models\Rating.cs" />
+    <Compile Include="Models\SignatureStatusResponse.cs" />
+    <Compile Include="Models\NavnAdresse.cs" />
+    <Compile Include="Models\HentForetakResponse.cs" />
+    <Compile Include="Models\Economy.cs" />
+    <Compile Include="Models\CreditCheckCompanyResponse.cs" />
+    <Compile Include="Models\PersonMeldinger.cs" />
+    <Compile Include="Models\PersonVervData.cs" />
+    <Compile Include="Models\PersonFullmaktPerson.cs" />
+    <Compile Include="Models\PersonFullmaktForetak.cs" />
+    <Compile Include="Models\Identifikasjon.cs" />
+    <Compile Include="Models\OrganizationResponse.cs" />
+    <Compile Include="Controllers\CompanyInfo.cs" />
+    <Compile Include="Controllers\ICompanyInfo.cs" />
+    <Compile Include="Controllers\CreditCheck.cs" />
+    <Compile Include="Controllers\ICreditCheck.cs" />
+    <Compile Include="Controllers\OfficialPersonRegistry.cs" />
+    <Compile Include="Controllers\IOfficialPersonRegistry.cs" />
+    <Compile Include="Controllers\PersonalInfo.cs" />
+    <Compile Include="Controllers\IPersonalInfo.cs" />
+    <Compile Include="Controllers\SignatureRolesCheck.cs" />
+    <Compile Include="Controllers\ISignatureRolesCheck.cs" />
+    <Compile Include="Http\Client\IHTTPClient.cs" />
+    <Compile Include="Http\Client\UnirestClient.cs" />
+    <Compile Include="Http\Client\HttpEventHandlers.cs" />
+    <Compile Include="Http\Client\HttpContext.cs" />
+    <Compile Include="Http\Request\HttpRequest.cs" />
+    <Compile Include="Http\Request\HttpMethod.cs" />
+    <Compile Include="Http\Response\HttpResponse.cs" />
+    <Compile Include="Http\Response\HttpStringResponse.cs" />
+    <Compile Include="Http\Client\FileStreamInfo.cs" />
+    <Compile Include="Controllers\BaseController.cs" />
+    <Compile Include="Configuration.cs" />
+    <Compile Include="Utilities\APIHelper.cs" />
+    <Compile Include="Utilities\UnixDateTimeConverter.cs" />
+    <Compile Include="Utilities\CustomDateTimeConverter.cs" />
+    <Compile Include="Utilities\ListDateTimeConverter.cs" />
+    <Compile Include="Exceptions\APIException.cs" />
+    <Compile Include="SignereNoAccontClient.cs" />
+    <Compile Include="ISignereNoAccontClient.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <None Include="packages.config" />
+    <None Include="SignereNoAccont.PCL.nuspec">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
+  <Import Project="$(SolutionDir)\packages\Microsoft.Bcl.Build.1.0.21\build\Microsoft.Bcl.Build.targets" Condition="Exists('$(SolutionDir)\packages\Microsoft.Bcl.Build.1.0.21\build\Microsoft.Bcl.Build.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Enable NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>    
+    <Error Condition="!Exists('..\packages\Microsoft.Bcl.Build.1.0.21\build\Microsoft.Bcl.Build.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Bcl.Build.1.0.21\build\Microsoft.Bcl.Build.targets'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
